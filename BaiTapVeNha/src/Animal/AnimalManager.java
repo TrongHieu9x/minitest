@@ -2,11 +2,11 @@ package Animal;
 
 import java.util.Arrays;
 
-public class ManagerAnimal {
+public class AnimalManager {
     private Animal[] animals;
     private static int index = 0;
 
-    public ManagerAnimal(Animal[] animals) {
+    public AnimalManager(Animal[] animals) {
         this.animals = animals;
     }
 
