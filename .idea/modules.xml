@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiTapVeNha/BaiTapVeNha.iml" filepath="$PROJECT_DIR$/BaiTapVeNha/BaiTapVeNha.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Minitest 2/Minitest 2.iml" filepath="$PROJECT_DIR$/Minitest 2/Minitest 2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/minhitest.iml" filepath="$PROJECT_DIR$/.idea/minhitest.iml" />
+    </modules>
+  </component>
+</project>
