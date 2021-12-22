@@ -25,7 +25,39 @@ public class Main {
                     break;
                 case 2:
                     Human human = humanManager.createHuman();
+                case 2:
+                    Human human1= humanManager.createHuman();
+                    humanManager.addHuman(human1);
+                    break;
+                case 3:
+                    System.out.println("Nhập tên: ");
+                    String deleteName = scanner.nextLine();
+                    scanner.nextLine();
+                    Human human2 = humanManager.deleteByName(deleteName);
+                    if (human2 == null){
+                        System.out.println("không có tên người tương ứng!");
+                    } else {
+                        System.out.println(human2);
+                    }
+                    break;
+                case 4:
+                    System.out.println("Nhập tên: ");
+                    String editName = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.println(humanManager.updateByName(editName));
+                    break;
+                case 5:
 
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+            }
+
+        } while (choice != 0);
             }
         }
     }
