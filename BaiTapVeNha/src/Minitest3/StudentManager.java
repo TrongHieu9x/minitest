@@ -5,8 +5,8 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class StudentManager {
-    private ArrayList<Student> students;
-    private final Scanner scanner = new Scanner(System.in);
+    private static ArrayList<Student> students;
+    private static final Scanner scanner = new Scanner(System.in);
 
     public StudentManager() {
         this.students = new ArrayList<>();
@@ -22,15 +22,16 @@ public class StudentManager {
         String name = scanner.nextLine();
         System.out.println("Nhập vào tuổi: ");
         int age = scanner.nextInt();
-
         System.out.println("Nhập điểm Toán: ");
         double scoreMath = scanner.nextDouble();
         System.out.println("Nhập điểm Toán: ");
         double scorePhisyo = scanner.nextDouble();
         System.out.println("Nhập điểm Toán: ");
         double scoreChemistry = scanner.nextDouble();
+        System.out.println("Nhập điểm Trung binh: ");
+        double averagePoint = scanner.nextDouble();
         scanner.nextLine();
-        return new Student(name, age, scoreMath, scorePhisyo, scoreChemistry);
+        return new Student(name, age, scoreMath, scorePhisyo, scoreChemistry, averagePoint);
     }
 
     public static Student searchById(int id) {
